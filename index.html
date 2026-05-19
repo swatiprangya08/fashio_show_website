@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA | International Fashion Week</title>
+    <meta name="description" content="Experience the pinnacle of luxury fashion at AURA International Fashion Week. Book your tickets now.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 2. Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">AURA.</a>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#designers">Designers</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section class="hero" id="home">
+        <!-- Using a placeholder background image generated earlier -->
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title reveal-text">AURA Fashion Week</h1>
+            <p class="hero-tagline reveal-text delay-1">The Pinnacle of Global Luxury</p>
+            <div class="event-details reveal-text delay-2">
+                <span><i class="far fa-calendar-alt"></i> October 15-20, 2026</span>
+                <span><i class="fas fa-map-marker-alt"></i> The Grand Palais, Paris</span>
+            </div>
+            <div class="countdown reveal-text delay-3" id="countdown">
+                <div class="cd-box"><span id="days">00</span><p>Days</p></div>
+                <div class="cd-box"><span id="hours">00</span><p>Hours</p></div>
+                <div class="cd-box"><span id="minutes">00</span><p>Minutes</p></div>
+                <div class="cd-box"><span id="seconds">00</span><p>Seconds</p></div>
+            </div>
+            <a href="#tickets" class="btn btn-gold reveal-text delay-4">Book Tickets</a>
+        </div>
+    </section>
+
+    <!-- 3. About the Event -->
+    <section class="about section-padding" id="about">
+        <div class="container about-container">
+            <div class="about-text scroll-reveal">
+                <h2 class="section-title">Defining the <span class="gold-text">Future</span> of Fashion</h2>
+                <p>Welcome to AURA International Fashion Week. A mesmerizing confluence of avant-garde designs, haute couture, and cinematic runway experiences. Over five days, witness the world's most visionary designers unveil their upcoming collections.</p>
+                <p>Immerse yourself in an atmosphere of pure luxury, where creativity knows no bounds and elegance is redefined with every step.</p>
+                <a href="#designers" class="btn btn-outline">Discover Designers</a>
+            </div>
+            <div class="about-image scroll-reveal right">
+                <img src="images/model_shot_1_1779207662836.png" alt="Haute Couture Fashion Model">
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Featured Designers -->
+    <section class="designers section-padding bg-dark" id="designers">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">Featured <span class="gold-text">Designers</span></h2>
+                <p class="section-subtitle">Visionaries shaping the aesthetic of tomorrow.</p>
+            </div>
+            <div class="designer-grid">
+                <!-- Designer Card 1 -->
+                <div class="designer-card scroll-reveal">
+                    <div class="designer-img">
+                        <img src="images/designer_portrait_1779207643843.png" alt="Elena Rostova">
+                        <div class="designer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="designer-info">
+                        <h3>Elena Rostova</h3>
+                        <p class="brand">Maison Rostova</p>
+                        <p class="bio">Known for avant-garde silhouettes and dark romanticism.</p>
+                    </div>
+                </div>
+                <!-- Designer Card 2 -->
+                <div class="designer-card scroll-reveal delay-1">
+                    <div class="designer-img">
+                        <img src="images/designer_portrait_1779207643843.png" alt="Julian Vance" style="filter: hue-rotate(45deg);">
+                        <div class="designer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="designer-info">
+                        <h3>Julian Vance</h3>
+                        <p class="brand">VANCE Official</p>
+                        <p class="bio">Redefining modern tailoring with sustainable luxury.</p>
+                    </div>
+                </div>
+                <!-- Designer Card 3 -->
+                <div class="designer-card scroll-reveal delay-2">
+                    <div class="designer-img">
+                        <img src="images/designer_portrait_1779207643843.png" alt="Aisha Khan" style="filter: hue-rotate(90deg);">
+                        <div class="designer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="designer-info">
+                        <h3>Aisha Khan</h3>
+                        <p class="brand">AK Couture</p>
+                        <p class="bio">Bridging traditional craftsmanship with high fashion.</p>
+                    </div>
+                </div>
+                <!-- Designer Card 4 -->
+                <div class="designer-card scroll-reveal">
+                    <div class="designer-img">
+                        <img src="images/designer_portrait_1779207643843.png" alt="Matteo Rossi" style="filter: hue-rotate(180deg);">
+                        <div class="designer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="designer-info">
+                        <h3>Matteo Rossi</h3>
+                        <p class="brand">Rossi Milano</p>
+                        <p class="bio">The epitome of Italian leather and sharp minimalism.</p>
+                    </div>
+                </div>
+                <!-- Designer Card 5 -->
+                <div class="designer-card scroll-reveal delay-1">
+                    <div class="designer-img">
+                        <img src="images/designer_portrait_1779207643843.png" alt="Chloe Chen" style="filter: hue-rotate(220deg);">
+                        <div class="designer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="designer-info">
+                        <h3>Chloe Chen</h3>
+                        <p class="brand">Atelier Chen</p>
+                        <p class="bio">Ethereal textiles and futuristic wearable art.</p>
+                    </div>
+                </div>
+                <!-- Designer Card 6 -->
+                <div class="designer-card scroll-reveal delay-2">
+                    <div class="designer-img">
+                        <img src="images/designer_portrait_1779207643843.png" alt="Marcus Wright" style="filter: grayscale(80%);">
+                        <div class="designer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="designer-info">
+                        <h3>Marcus Wright</h3>
+                        <p class="brand">WRIGHT.</p>
+                        <p class="bio">Luxury streetwear meets high-end tailoring.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Event Schedule -->
+    <section class="schedule section-padding" id="schedule">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">Event <span class="gold-text">Schedule</span></h2>
+                <p class="section-subtitle">Five days of uninterrupted elegance.</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Day 1: Oct 15</div>
+                    <div class="timeline-content">
+                        <h3>Opening Ceremony & Avant-Garde</h3>
+                        <p>18:00 - Red Carpet Arrivals</p>
+                        <p>20:00 - Maison Rostova Runway</p>
+                        <p>22:00 - VIP Afterparty</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-reveal right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Day 2: Oct 16</div>
+                    <div class="timeline-content">
+                        <h3>Modern Tailoring & Street Luxe</h3>
+                        <p>15:00 - WRIGHT. Collection</p>
+                        <p>18:00 - VANCE Official Showcase</p>
+                        <p>21:00 - Live Music Performance</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Day 3: Oct 17</div>
+                    <div class="timeline-content">
+                        <h3>Global Heritage & Craft</h3>
+                        <p>14:00 - Designer Panel Discussion</p>
+                        <p>19:00 - AK Couture Runway</p>
+                        <p>21:30 - Exclusive Dinner</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-reveal right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Day 4: Oct 18</div>
+                    <div class="timeline-content">
+                        <h3>Ethereal Visions & Italian Mastery</h3>
+                        <p>16:00 - Atelier Chen Show</p>
+                        <p>20:00 - Rossi Milano Collection</p>
+                        <p>22:00 - Charity Gala Auction</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Day 5: Oct 19</div>
+                    <div class="timeline-content">
+                        <h3>The Grand Finale</h3>
+                        <p>18:00 - Secret Guest Designer</p>
+                        <p>21:00 - Awards Ceremony</p>
+                        <p>23:00 - Closing Celebration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Gallery Section -->
+    <section class="gallery section-padding bg-dark" id="gallery">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">The <span class="gold-text">Gallery</span></h2>
+                <p class="section-subtitle">Moments captured in timeless elegance.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item scroll-reveal">
+                    <img src="images/model_shot_1_1779207662836.png" alt="Gallery Image 1" class="gallery-img">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="images/model_shot_2_1779207683557.png" alt="Gallery Image 2" class="gallery-img">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="images/hero_runway_1779207624343.png" alt="Gallery Image 3" class="gallery-img">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="images/model_shot_1_1779207662836.png" alt="Gallery Image 4" class="gallery-img" style="filter: sepia(0.5) hue-rotate(180deg);">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="images/model_shot_2_1779207683557.png" alt="Gallery Image 5" class="gallery-img" style="filter: grayscale(1);">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="images/designer_portrait_1779207643843.png" alt="Gallery Image 6" class="gallery-img">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Ticket Booking Section -->
+    <section class="tickets section-padding" id="tickets">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">Reserve Your <span class="gold-text">Seat</span></h2>
+                <p class="section-subtitle">Experience fashion history from the front row.</p>
+            </div>
+            <div class="pricing-cards">
+                <!-- Standard Pass -->
+                <div class="pricing-card scroll-reveal">
+                    <h3>Standard Pass</h3>
+                    <p class="price">$500</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Access to all General Runways</li>
+                        <li><i class="fas fa-check"></i> Entry to Exhibition Area</li>
+                        <li><i class="fas fa-times text-muted"></i> Front Row Seating</li>
+                        <li><i class="fas fa-times text-muted"></i> VIP Afterparty</li>
+                    </ul>
+                    <button class="btn btn-outline w-100 open-modal">Reserve Seat</button>
+                </div>
+                <!-- Premium Pass -->
+                <div class="pricing-card featured scroll-reveal delay-1">
+                    <div class="badge">Most Popular</div>
+                    <h3>Premium Pass</h3>
+                    <p class="price">$1,200</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Access to all Runways</li>
+                        <li><i class="fas fa-check"></i> Priority Seating (Rows 2-4)</li>
+                        <li><i class="fas fa-check"></i> Designer Meet & Greet</li>
+                        <li><i class="fas fa-times text-muted"></i> VIP Afterparty</li>
+                    </ul>
+                    <button class="btn btn-gold w-100 open-modal">Reserve Seat</button>
+                </div>
+                <!-- VIP Pass -->
+                <div class="pricing-card scroll-reveal delay-2">
+                    <h3>VIP Pass</h3>
+                    <p class="price">$3,500</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Front Row Seating Guarantee</li>
+                        <li><i class="fas fa-check"></i> Exclusive Backstage Tour</li>
+                        <li><i class="fas fa-check"></i> VIP Afterparty Access</li>
+                        <li><i class="fas fa-check"></i> Luxury Gift Bag</li>
+                    </ul>
+                    <button class="btn btn-outline w-100 open-modal">Reserve VIP</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Testimonials -->
+    <section class="testimonials section-padding bg-dark">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">Voices of <span class="gold-text">AURA</span></h2>
+                <p class="section-subtitle">What the industry says about us.</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-card scroll-reveal">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review">"AURA Fashion Week sets the gold standard. The production value, the curation of designers, and the sheer elegance of the event are unparalleled."</p>
+                    <div class="reviewer">
+                        <h4>Anna V.</h4>
+                        <span>Editor-in-Chief, Vogue Paris</span>
+                    </div>
+                </div>
+                <div class="testimonial-card scroll-reveal delay-1">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review">"The most spectacular runway experience of the year. A must-attend for anyone serious about haute couture and modern fashion dynamics."</p>
+                    <div class="reviewer">
+                        <h4>David H.</h4>
+                        <span>Fashion Critic, NY Times</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Sponsors Section -->
+    <section class="sponsors section-padding">
+        <div class="container">
+            <h3 class="text-center mb-4" style="font-family: 'Lato', sans-serif; text-transform: uppercase; letter-spacing: 2px; font-size: 14px; color: #aaa;">Official Partners</h3>
+            <div class="sponsor-logos scroll-reveal">
+                <div class="logo-item"><i class="fab fa-aws"></i></div>
+                <div class="logo-item"><i class="fab fa-apple"></i></div>
+                <div class="logo-item"><i class="fab fa-stripe"></i></div>
+                <div class="logo-item"><i class="fab fa-dhl"></i></div>
+                <div class="logo-item"><i class="fab fa-amazon"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Contact Section -->
+    <section class="contact section-padding bg-dark" id="contact">
+        <div class="container contact-container">
+            <div class="contact-info scroll-reveal">
+                <h2 class="section-title">Get in <span class="gold-text">Touch</span></h2>
+                <p>For press inquiries, sponsorship opportunities, or general questions, please reach out to our team.</p>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@aurafashionweek.com</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+33 1 40 20 50 50</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>The Grand Palais, 3 Avenue du Général Eisenhower, 75008 Paris, France</span>
+                </div>
+                <div class="social-links mt-3">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="contact-form scroll-reveal right">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select>
+                            <option value="">Inquiry Type</option>
+                            <option value="press">Press & Media</option>
+                            <option value="sponsorship">Sponsorship</option>
+                            <option value="tickets">Ticketing</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-gold">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="#" class="logo footer-logo">AURA.</a>
+                <p>Redefining international luxury fashion through cinematic runway experiences and avant-garde artistry.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#designers">Designers</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Ticketing Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col instagram-feed">
+                <h4>Instagram</h4>
+                <div class="ig-grid">
+                    <img src="images/model_shot_1_1779207662836.png" alt="IG 1">
+                    <img src="images/model_shot_2_1779207683557.png" alt="IG 2">
+                    <img src="images/hero_runway_1779207624343.png" alt="IG 3">
+                    <img src="images/designer_portrait_1779207643843.png" alt="IG 4">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AURA International Fashion Week. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Ticket Modal -->
+    <div class="modal" id="ticketModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Book Your Tickets</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Select Pass Type</option>
+                        <option value="standard">Standard Pass - $500</option>
+                        <option value="premium">Premium Pass - $1,200</option>
+                        <option value="vip">VIP Pass - $3,500</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="number" placeholder="Quantity" min="1" max="10" required>
+                </div>
+                <button type="submit" class="btn btn-gold w-100">Proceed to Payment</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
